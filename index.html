@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线ToDoList应用</title>
+    <link rel="stylesheet" href="./css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="">在线ToDoList应用</h1>
+        <h4 class="text-muted" >简单 / 易用 / 便捷</h4>
+        <h3 class="text-danger">张铭钦</h3>
+        <h5 class="text-primary">我的博客: <a class="text-warning" href="http://zmqblog.top/">http://zmqblog.top/</a></h5>
+        <h5 class="text-primary">我的GitHub: <a class="text-warning" href="https://github.com/MeetZhang">https://github.com/MeetZhang</a></h5>
+    </div>
+    <div class="container">
+        <form class="add-task"   onsubmit="return false">
+            <input type="text" class="content " placeholder="请您输入内容">
+            <button class="btn-primary addTaskSubmit" id="submit">submit</button>
+        </form>
+        <div class="task-list"></div>
+    </div>
+
+
+    <div class="task-detail">
+        <input type="text" class="detail-content" />
+        <span style="font-size: 16px;color:white;"> 备注</span>
+        <textarea class="desc"></textarea>
+        <span style="font-size: 16px;color:white;"> 设置闹钟</span>
+        <input type="text" class="datetime" />
+        <button class="detail-submit ">提交</button>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.datetimepicker.full.js"></script>
+    <script src="./js/store.js"></script>
+    <script src="./js/base.js"></script>
+    <!-- <script>
+        var submitBtn = document.getElementById("submit");
+        submitBtn.onclick = function (event) {
+//   alert("preventDefault!");
+  return false;
+ };
+    </script> -->
+</body>
+</html>

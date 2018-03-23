@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+	background-color: #00334B;
+    /* color: white; */
+}
+.fr{
+    float: right;
+}
+.container{
+    margin: 0 auto;
+    max-width: 700px;
+    
+}
+h1{
+    text-align: center;
+    /* padding: px; */
+    color: white;
+}
+.content,button{
+    padding: 5px 0;
+    border-radius: 4px;
+    border: none;
+}
+.add-task .content{
+    width: 84%;
+    margin-right: 1%;
+    padding-left: 10px;
+}
+button{
+    width: 14%;
+    background: #0e98da;
+    cursor: pointer;
+}
+.add-task button:hover{
+    background: #01547b;
+}
+.task-list{
+    width: 100%;
+    margin-top: 15px;
+}
+.task-list .task-item:hover{
+    background: #ccc;
+}
+.task-list .task-item{
+    padding: 10px;
+    background: #fff;   
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.task-list .task-item .item-content{
+    margin-left: 15px;
+}
+.detail{
+    padding-left:10px; 
+}
+.detail,.delete{
+    color: #888;
+}
+.detail:hover,.delete:hover{
+    color: black;
+}
+
+
+/*点击详情弹出的框*/
+.task-detail{
+	display: none;
+	width: 300px;
+	height:340px;
+	position: fixed;
+    background-color: #524141;
+    padding: 15px;
+    top: 100px;
+    right: calc(50vw - 150px);
+    border-radius: 3px;
+    color: white;
+}
+.detail-content,.datetime{
+	background-color: #ddd;
+	width: 100%;
+	max-height: 100px;
+	margin-bottom: 15px;
+}
+.desc{
+	background-color: #ddd;
+	width: 100%;
+	height: 100px;
+	border: 0;
+}
+.task-detail input,.desc{
+    color: black;
+}
+/* .task-detail desc{
+    color: 
+} */
