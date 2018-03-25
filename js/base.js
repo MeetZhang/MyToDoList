@@ -103,7 +103,9 @@ var myTodoModule = (function () {
             '				</div>';
         $(oneItem).prependTo($task_list);
         listenDetail(); //详情
+        // if(detailIndex!=detailIndex){
         listenDelete(); //删除
+        // }
     }
 
     //按钮监听
@@ -147,19 +149,21 @@ var myTodoModule = (function () {
     //删除事件
     //注意事项 为什么不能用前面Juqery定义的$delete? 因为$delete经过几次渲染已经没有    
     var listenDelete = function () {
-        // var falg = true;
+        var falg = true;
         $('.delete').click(function () {
             // var falg = true;
             deleteIndex = task_list.length - 1 - $(this).parent().parent().index(); //通过列表的长度-1-详情自身获得正确索引
             // if(falg){
-            var r = confirm("您确认要删除吗？");
+                // alert(deleteIndex==)
+            var r = confirm("小主您确认要删除吗？");
             if (r) {
                 falg = false;
                 task_list.splice(deleteIndex, 1) //删除数据里的列表，第一个是数组索引，第二个是删除个数
                 $(this).parent().parent().remove(); //删除内容
                 // alert(this)
                 store.set('task_list', task_list);
-            }
+            r.stopPropagation()
+        }
             // }
         })
     }

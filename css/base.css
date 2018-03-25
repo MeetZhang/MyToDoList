@@ -81,7 +81,7 @@ button{
     top: 100px;
     right: calc(50vw - 150px);
     border-radius: 3px;
-    color: white;
+    /* color: white; */
 }
 .detail-content,.datetime{
 	background-color: #ddd;
@@ -95,9 +95,3 @@ button{
 	height: 100px;
 	border: 0;
 }
-.task-detail input,.desc{
-    color: black;
-}
-/* .task-detail desc{
-    color: 
-} */
