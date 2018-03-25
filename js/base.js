@@ -155,14 +155,14 @@ var myTodoModule = (function () {
             deleteIndex = task_list.length - 1 - $(this).parent().parent().index(); //通过列表的长度-1-详情自身获得正确索引
             // if(falg){
                 // alert(deleteIndex==)
-            var r = confirm("小主您确认要删除吗？");
+            var r = confirm("主任您确认要删除吗？");
             if (r) {
                 falg = false;
                 task_list.splice(deleteIndex, 1) //删除数据里的列表，第一个是数组索引，第二个是删除个数
                 $(this).parent().parent().remove(); //删除内容
                 // alert(this)
                 store.set('task_list', task_list);
-            r.stopPropagation()
+            r.stopImmediatePropagation()
         }
             // }
         })

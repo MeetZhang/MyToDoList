@@ -1,8 +1,12 @@
-# MyToDoList
-在线ToDoList应用
----
+
 # 前言
-> 用JQuery实现一个在线To-do List应用，主要对jQueryAPI选择器,方法等进行一个学习，在编程时采用模块化编程思路进行开发
+> 使用模块化编程的方式用JS操控DOM，事件，事件触发之间的逻辑关系，以及通过Sore.js实现          了浏览器的本地存储的，通过Datetimepicker插件实现日期的选择，完成了基本的增，删，改，查等功能，最后用BootStrap优化界面。
+
+---
+预览地址：https://meetzhang.github.io/MyToDoList/
+
+---
+
 # 开发思路
 - 列表清单应用的整体布局
 - 列表清单布局的细节完善
@@ -16,7 +20,7 @@
 - 通过datetimepicker插件实现日期的选择- 
 
 # 总结
-使用 JS 操控 DOM，事件，事件触发之间的逻辑关系，以及通过 store.js 实现
-了浏览器的本地存储的，通过 datetimepicker 插件实现日期的选择，完成了基本的
-增，删，改，查等功能，最后用 BootStrap 优化界面
+##### **使用 JS 操控 DOM，事件，事件触发之间的逻辑关系，以及通过 store.js 实现 了浏览器的本地存储的，通过 datetimepicker 插件实现日期的选择，完成了基本的 增，删，改，查等功能，最后用 BootStrap 优化界面**
+
+
 
